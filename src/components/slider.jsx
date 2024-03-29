@@ -37,17 +37,15 @@ function Slider() {
   };
 
   return (
-    <div className="overflow-hidden relative border">
+    <div className="overflow-hidden relative">
       <div
         className="flex transition-transform duration-700 ease-in-out "
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-        {data.map((item, index) => (
-          <div key={item.id} className="min-w-full flex justify-center">
-            <img
-              src={item.picture}
-              alt={`Slide ${item.id}`}
-              className="w-1200 h-auto"
-            />
+        {data.map((item) => (
+          <div
+            key={item.id}
+            className="min-w-full flex justify-center opacity-20 ">
+            <img src={item.picture} alt={`Slide ${item.id}`} />
           </div>
         ))}
       </div>
