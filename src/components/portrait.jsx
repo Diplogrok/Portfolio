@@ -34,12 +34,12 @@ function Portrait({ isNightMode, mode }) {
         <img
           src={portraitImg}
           alt="Portrait"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover opacity-60"
         />
       </div>
 
       <div
-        className={`absolute top-80 bottom-0 left-0 ${progressBarColor} h-10`}
+        className={`absolute top-80 bottom-0 left-0 rounded-r-lg ${progressBarColor} h-10`}
         style={{
           width: `${progressWidth}%`,
           transition: "width 0.8s ease-in-out",

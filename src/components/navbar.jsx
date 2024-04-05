@@ -1,6 +1,10 @@
 import React from "react";
+import { useModeContext } from "../context/ModeContext";
 
-function Navbar({ toggleMode, isNightMode }) {
+function Navbar() {
+  const { mode, toggleMode } = useModeContext();
+  const isNightMode = mode === "night";
+
   return (
     <nav className="relative flex items-center justify-end p-5 ">
       {/* Afficher l'icône soleil en mode nuit */}

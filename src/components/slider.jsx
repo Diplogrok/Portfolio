@@ -45,7 +45,11 @@ function Slider() {
           <div
             key={item.id}
             className="min-w-full flex justify-center opacity-20 ">
-            <img src={item.picture} alt={`Slide ${item.id}`} />
+            <img
+              src={item.picture}
+              alt={`Slide ${item.id}`}
+              className="rounded-lg"
+            />
           </div>
         ))}
       </div>
