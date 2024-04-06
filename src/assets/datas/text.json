@@ -46,5 +46,19 @@
       "description": "Photoshop, Illustrator, InDesign, I am perfectly competent with this software.",
       "imageUrl": "/images/logo.png"
     }
+  ],
+  "Contact": [
+    {
+      "title": "LinkedIn",
+      "logo": "/images/logo.png"
+    },
+    {
+      "title": "Github",
+      "logo": "/images/logo.png"
+    },
+    {
+      "title": "alexia0stephan@gmail.com",
+      "logo": "/images/logo.png"
+    }
   ]
 }

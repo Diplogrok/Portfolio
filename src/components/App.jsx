@@ -7,6 +7,8 @@ import Slider from "./slider";
 import { useModeContext } from "../context/ModeContext";
 import Skills from "./skills";
 import Studies from "./studies";
+import Contact from "./contact";
+import Footer from "./footer";
 
 function App() {
   const { mode, toggleMode, backgroundColor } = useModeContext();
@@ -26,6 +28,11 @@ function App() {
           Student Journey
         </h2>
         <Studies />
+        <h2 className="font-semibold text-3xl mb-20 text-center text-pink-500">
+          Say hi !
+        </h2>
+        <Contact />
+        <Footer />
       </Content>
     </Background>
   );
