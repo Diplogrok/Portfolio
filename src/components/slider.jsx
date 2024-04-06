@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import data from "../assets/datas/content.json";
+import data from "../assets/datas/slider.json";
 
 // SVG pour la flèche droite
 const RightArrowIcon = () => (
@@ -46,8 +46,8 @@ function Slider() {
 
   return (
     <div
-      className="overflow-hidden relative"
-      style={{ width: "80%", margin: "0 auto" }}>
+      className="overflow-hidden relative m-auto mb-32"
+      style={{ width: "80%" }}>
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}>

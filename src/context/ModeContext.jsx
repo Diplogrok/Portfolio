@@ -10,9 +10,10 @@ export const ModeProvider = ({ children }) => {
   const toggleMode = () => {
     setMode((prevMode) => (prevMode === "day" ? "night" : "day"));
   };
+  const textColor = mode === "day" ? "text-gray-900" : "text-teal-50";
 
   return (
-    <ModeContext.Provider value={{ mode, toggleMode }}>
+    <ModeContext.Provider value={{ mode, toggleMode, textColor }}>
       {children}
     </ModeContext.Provider>
   );
