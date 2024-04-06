@@ -4,16 +4,19 @@ import Description from "./description";
 import data from "../assets/datas/text.json";
 
 function Portrait({ isNightMode, mode }) {
-  const { text1, text2, text3, text4, text5 } = data;
   let rectangleColor;
+  let modeAvailabilityText;
+
   if (mode === "available") {
     rectangleColor = isNightMode
       ? "bg-purple-800"
       : "texture-effect bg-purple-300 ";
+    modeAvailabilityText = data.text4.available;
   } else if (mode === "unavailable") {
     rectangleColor = isNightMode
       ? "bg-teal-600"
       : "texture-effect bg-teal-400 ";
+    modeAvailabilityText = data.text4.unavailable;
   }
 
   let progressBarColor;
@@ -44,11 +47,11 @@ function Portrait({ isNightMode, mode }) {
         />
       </div>
       <Description
-        text1={text1}
-        text2={text2}
-        text3={text3}
-        text4={text4}
-        text5={text5}
+        text1={data.text1}
+        text2={data.text2}
+        text3={data.text3}
+        text4={modeAvailabilityText} // Utilisez le texte correspondant à la disponibilité
+        text5={data.text5}
       />
       <div
         className={`absolute top-80 bottom-0 left-0 rounded-r-lg ${progressBarColor} h-10`}

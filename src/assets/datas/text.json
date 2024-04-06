@@ -2,6 +2,9 @@
   "text1": "alexiaStephan {",
   "text2": "frontEndDev (jr)",
   "text3": "roller.derby.player ;",
-  "text4": "// Available",
+  "text4": {
+    "available": "// Available",
+    "unavailable": "// Unavailable until 01/01/2025"
+  },
   "text5": "} ;"
 }
