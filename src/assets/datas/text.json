@@ -8,5 +8,43 @@
   },
   "text5": "};",
   "legend1": " ' Working hard to write clean,",
-  "legend2": "elegant & efficient code."
+  "legend2": "elegant & efficient code.",
+
+  "Studies": [
+    {
+      "title": "Bachelor's degree of Arts (City Design)",
+      "description": "Fine Arts school, Le Mans"
+    },
+    {
+      "title": "Two-Year technical degree in Management",
+      "description": "Apprentice Training Center, Le Mans"
+    },
+    {
+      "title": "I am currently studying the Web Integrator course with OpenClassroom",
+      "description": "Click here to see more about it"
+    }
+  ],
+
+  "Skills": [
+    {
+      "title": "React",
+      "description": "I can create any application you want with the most popular javascript library.",
+      "imageUrl": "/images/logo.png"
+    },
+    {
+      "title": "TailwindCSS",
+      "description": "I am very comfortable with this css framework even if I enjoy Sass more.",
+      "imageUrl": "/images/logo.png"
+    },
+    {
+      "title": "Proper use of AI",
+      "description": "I have created some applications using AI tools and enjoy learning about it.",
+      "imageUrl": "/images/logo.png"
+    },
+    {
+      "title": "Adobe suite",
+      "description": "Photoshop, Illustrator, InDesign, I am perfectly competent with this software.",
+      "imageUrl": "/images/logo.png"
+    }
+  ]
 }

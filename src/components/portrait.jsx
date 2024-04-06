@@ -38,7 +38,7 @@ function Portrait({ isNightMode, mode }) {
   }, []);
 
   return (
-    <div className="relative mt-32 mb-32 flex">
+    <div className="relative mt-32 pb-40 flex">
       <div className={`top-0 left-0 ${rectangleColor} w-64 h-96`} />
       <div className="absolute left-20 flex items-center">
         <img
