@@ -36,18 +36,8 @@ function Slider() {
     setCurrentSlide(newIndex);
   };
 
-  const handleMouseEnter = (index) => {
-    setHoveredIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
-
   return (
-    <div
-      className="overflow-hidden relative m-auto mb-32"
-      style={{ width: "80%" }}>
+    <div className="overflow-hidden relative m-auto" style={{ width: "80%" }}>
       <div
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
@@ -56,11 +46,11 @@ function Slider() {
             <img
               src={hoveredIndex === index ? item.focusPicture : item.picture}
               alt={`Slide ${item.id}`}
-              className="rounded-lg cursor-pointer"
+              className="rounded-lg cursor-pointer border border-purple-300"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
               style={{
-                opacity: hoveredIndex === index ? 1 : 0.2,
+                opacity: hoveredIndex === index ? 1 : 0.4,
                 transition: "opacity 0.3s ease",
               }}
             />

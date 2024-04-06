@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import portraitImg from "../assets/images/Portrait.jpg";
+import portraitImg from "/images/Portrait.jpg";
 import Description from "./description";
 import data from "../assets/datas/text.json";
+import Legend from "./legend";
 
 function Portrait({ isNightMode, mode }) {
   let rectangleColor;
@@ -39,27 +40,28 @@ function Portrait({ isNightMode, mode }) {
   return (
     <div className="relative mt-32 mb-32 flex">
       <div className={`top-0 left-0 ${rectangleColor} w-64 h-96`} />
-      <div className="absolute top-0 left-20 w-96 h-96 rounded-full overflow-hidden">
+      <div className="absolute left-20 flex items-center">
         <img
           src={portraitImg}
           alt="Portrait"
-          className="w-full h-full object-cover opacity-60"
+          className="w-96 h-96 rounded-full object-cover opacity-60"
+        />
+        <Description
+          text1={data.text1}
+          text2={data.text2}
+          text3={data.text3}
+          text4={modeAvailabilityText}
+          text5={data.text5}
         />
       </div>
-      <Description
-        text1={data.text1}
-        text2={data.text2}
-        text3={data.text3}
-        text4={modeAvailabilityText} // Utilisez le texte correspondant à la disponibilité
-        text5={data.text5}
-      />
       <div
-        className={`absolute top-80 bottom-0 left-0 rounded-r-lg ${progressBarColor} h-10`}
+        className={`absolute top-52 bottom-0 left-0 rounded-r-lg ${progressBarColor} h-10 animate-progressBarAnimation`}
         style={{
           width: `${progressWidth}%`,
           transition: "width 0.8s ease-in-out",
-        }}
-      />
+        }}>
+        <Legend legend1={data.legend1} legend2={data.legend2} />
+      </div>
     </div>
   );
 }

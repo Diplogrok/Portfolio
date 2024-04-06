@@ -1,10 +1,12 @@
 {
   "text1": "alexiaStephan {",
-  "text2": "frontEndDev (jr)",
+  "text2": "frontEndDev(jr)",
   "text3": "roller.derby.player ;",
   "text4": {
     "available": "// Available",
     "unavailable": "// Unavailable until 01/01/2025"
   },
-  "text5": "} ;"
+  "text5": "};",
+  "legend1": " ' Working hard to write clean,",
+  "legend2": "elegant & efficient code."
 }
