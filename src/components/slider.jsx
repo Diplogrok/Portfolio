@@ -23,10 +23,10 @@ const LeftArrowIcon = () => (
 
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleSlideChange = (direction) => {
     const lastIndex = data.length - 1;
-
     let newIndex;
     if (direction === "next") {
       newIndex = currentSlide === lastIndex ? 0 : currentSlide + 1;
@@ -36,31 +36,45 @@ function Slider() {
     setCurrentSlide(newIndex);
   };
 
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   return (
-    <div className="overflow-hidden relative">
+    <div
+      className="overflow-hidden relative"
+      style={{ width: "80%", margin: "0 auto" }}>
       <div
-        className="flex transition-transform duration-700 ease-in-out "
+        className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-        {data.map((item) => (
-          <div
-            key={item.id}
-            className="min-w-full flex justify-center opacity-20 ">
+        {data.map((item, index) => (
+          <div key={item.id} className="min-w-full flex justify-center">
             <img
-              src={item.picture}
+              src={hoveredIndex === index ? item.focusPicture : item.picture}
               alt={`Slide ${item.id}`}
-              className="rounded-lg"
+              className="rounded-lg cursor-pointer"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+              style={{
+                opacity: hoveredIndex === index ? 1 : 0.2,
+                transition: "opacity 0.3s ease",
+              }}
             />
           </div>
         ))}
       </div>
       <div
         onClick={() => handleSlideChange("prev")}
-        className="absolute top-1/2 left-0 transform -translate-y-1/2 cursor-pointer">
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 cursor-pointer">
         <LeftArrowIcon />
       </div>
       <div
         onClick={() => handleSlideChange("next")}
-        className="absolute top-1/2 right-0 transform -translate-y-1/2 cursor-pointer">
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer">
         <RightArrowIcon />
       </div>
     </div>

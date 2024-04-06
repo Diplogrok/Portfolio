@@ -4,16 +4,20 @@ import portraitImg from "../assets/images/Portrait.jpg";
 function Portrait({ isNightMode, mode }) {
   let rectangleColor;
   if (mode === "available") {
-    rectangleColor = isNightMode ? "bg-purple-800" : "bg-purple-300";
+    rectangleColor = isNightMode
+      ? "bg-purple-800"
+      : "texture-effect bg-purple-300 ";
   } else if (mode === "unavailable") {
-    rectangleColor = isNightMode ? "bg-teal-600" : "bg-teal-400";
+    rectangleColor = isNightMode
+      ? "bg-teal-600"
+      : "texture-effect bg-teal-400 ";
   }
 
   let progressBarColor;
   if (mode === "available") {
-    progressBarColor = isNightMode ? "bg-teal-600" : "bg-teal-400";
+    progressBarColor = isNightMode ? "bg-teal-600" : "bg-teal-400 ";
   } else if (mode === "unavailable") {
-    progressBarColor = isNightMode ? "bg-purple-800" : "bg-purple-300";
+    progressBarColor = isNightMode ? "bg-purple-800" : "bg-purple-300 ";
   }
 
   const [progressWidth, setProgressWidth] = useState(0);

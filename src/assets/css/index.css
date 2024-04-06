@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.texture-effect {
+  background-image: url("src/assets/images/texture.png");
+  background-blend-mode: screen;
+  background-size: cover;
+}
 
