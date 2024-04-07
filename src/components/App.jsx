@@ -11,7 +11,7 @@ import Contact from "./contact";
 import Footer from "./footer";
 
 function App() {
-  const { mode, toggleMode, backgroundColor } = useModeContext();
+  const { mode, backgroundColor } = useModeContext();
   const isNightMode = mode === "night";
   const modeAvailability = "available"; // ou "unavailable"
 
@@ -29,7 +29,7 @@ function App() {
         </h2>
         <Studies />
         <h2 className="font-semibold text-3xl mb-20 text-center text-pink-500">
-          Say hi !
+          👋 Say hi !
         </h2>
         <Contact />
         <Footer />
