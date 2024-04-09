@@ -24,7 +24,7 @@ function App() {
       <Slider />
       <Skills />
       <h2
-        className={`font-semibold text-3xl mb-20 rounded-r-lg ${backgroundColor} ${textColor}`}>
+        className={`font-semibold text-3xl pl-2 mb-20 rounded-l-lg ${backgroundColor} ${textColor}`}>
         Student Journey
       </h2>
       <Studies />

@@ -11,12 +11,16 @@ export const ModeProvider = ({ children }) => {
     setMode((prevMode) => (prevMode === "day" ? "night" : "day"));
   };
 
-  const textColor = mode === "day" ? "text-gray-900" : "text-teal-50";
-  const backgroundColor = mode === "night" ? "bg-teal-600" : "bg-teal-400";
+  const isNightMode = mode === "night";
+
+  const textColor = isNightMode ? "text-teal-50" : "text-gray-900";
+  const backgroundColor = isNightMode ? "bg-teal-600" : "bg-teal-400";
+
+  const isNight = () => isNightMode;
 
   return (
     <ModeContext.Provider
-      value={{ mode, toggleMode, textColor, backgroundColor }}>
+      value={{ mode, toggleMode, textColor, backgroundColor, isNight }}>
       {children}
     </ModeContext.Provider>
   );

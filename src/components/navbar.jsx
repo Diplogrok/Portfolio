@@ -2,13 +2,12 @@ import React from "react";
 import { useModeContext } from "../context/ModeContext";
 
 function Navbar() {
-  const { mode, toggleMode } = useModeContext();
-  const isNightMode = mode === "night";
+  const { toggleMode, isNight } = useModeContext();
 
   return (
     <nav className="relative flex items-center justify-end p-5 ">
       {/* Afficher l'icône soleil en mode nuit */}
-      {isNightMode && (
+      {isNight() && (
         <>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +22,7 @@ function Navbar() {
       )}
 
       {/* Afficher l'icône lune en mode jour */}
-      {!isNightMode && (
+      {!isNight() && (
         <>
           <svg
             xmlns="http://www.w3.org/2000/svg"
