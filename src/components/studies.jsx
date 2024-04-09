@@ -14,7 +14,17 @@ function Studies() {
               {study.title}
             </div>
             <p className={`text-ml font-light italic ${textColor}`}>
-              {study.description}
+              {study.description === "👉 Click here to learn more about it" ? (
+                <a
+                  href="https://openclassrooms.com/fr/paths/900-integrateur-web"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-teal-400 font-bold not-italic">
+                  {study.description}
+                </a>
+              ) : (
+                study.description
+              )}
             </p>
           </div>
         </div>

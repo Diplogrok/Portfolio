@@ -28,10 +28,12 @@ function App() {
         Student Journey
       </h2>
       <Studies />
-      <h2
-        className={`font-semibold text-3xl mb-20 text-center text-pink-500 ${textColor}`}>
+      <h2 className="font-semibold text-3xl text-center text-pink-500">
         👋 Say hi !
       </h2>
+      <p className={`mb-8 text-center italic ${textColor}`}>
+        Find me on my social networks or email me.
+      </p>
       <Contact />
       <Footer />
     </Layout>

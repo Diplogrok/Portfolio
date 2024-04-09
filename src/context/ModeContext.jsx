@@ -18,9 +18,18 @@ export const ModeProvider = ({ children }) => {
 
   const isNight = () => isNightMode;
 
+  const getColor = () => (isNightMode ? "#F0FDFA" : "#111827");
+
   return (
     <ModeContext.Provider
-      value={{ mode, toggleMode, textColor, backgroundColor, isNight }}>
+      value={{
+        mode,
+        toggleMode,
+        textColor,
+        backgroundColor,
+        isNight,
+        getColor,
+      }}>
       {children}
     </ModeContext.Provider>
   );

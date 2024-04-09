@@ -31,9 +31,9 @@ const LeftArrowIcon = ({ arrowColor }) => (
 function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  const { isNight } = useModeContext();
+  const { getColor } = useModeContext();
 
-  const arrowColor = isNight() ? "#F0FDFA" : "#111827";
+  const arrowColor = getColor();
 
   const handleSlideChange = (direction) => {
     const lastIndex = data.length - 1;
