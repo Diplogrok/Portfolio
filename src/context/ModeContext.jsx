@@ -10,6 +10,7 @@ export const ModeProvider = ({ children }) => {
   const toggleMode = () => {
     setMode((prevMode) => (prevMode === "day" ? "night" : "day"));
   };
+
   const textColor = mode === "day" ? "text-gray-900" : "text-teal-50";
   const backgroundColor = mode === "night" ? "bg-teal-600" : "bg-teal-400";
 

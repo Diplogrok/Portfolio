@@ -1,40 +1,40 @@
 import React from "react";
-import Navbar from "./navbar";
-import Background from "./background";
-import Content from "./content";
-import Portrait from "./portrait";
-import Slider from "./slider";
 import { useModeContext } from "../context/ModeContext";
-import Skills from "./skills";
-import Studies from "./studies";
-import Contact from "./contact";
-import Footer from "./footer";
+import Layout from "./Layout";
+import Navbar from "./Navbar";
+import Portrait from "./Portrait";
+import Slider from "./Slider";
+import Skills from "./Skills";
+import Studies from "./Studies";
+import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
-  const { mode, backgroundColor } = useModeContext();
+  const { mode, backgroundColor, textColor } = useModeContext();
   const isNightMode = mode === "night";
   const modeAvailability = "available"; // ou "unavailable"
 
   return (
-    <Background mode={mode}>
-      <Content>
-        <Navbar />
-        <Portrait isNightMode={isNightMode} mode={modeAvailability} />
-        <h1 className="font-semibold text-5xl pb-20 ">Latest projects</h1>
-        <Slider />
-        <Skills />
-        <h2
-          className={`font-semibold text-3xl mb-20 rounded-r-lg ${backgroundColor}`}>
-          Student Journey
-        </h2>
-        <Studies />
-        <h2 className="font-semibold text-3xl mb-20 text-center text-pink-500">
-          👋 Say hi !
-        </h2>
-        <Contact />
-        <Footer />
-      </Content>
-    </Background>
+    <Layout mode={mode}>
+      <Navbar />
+      <Portrait isNightMode={isNightMode} mode={modeAvailability} />
+      <h1 className={`font-semibold text-5xl pb-20 ${textColor}`}>
+        Latest projects
+      </h1>
+      <Slider />
+      <Skills />
+      <h2
+        className={`font-semibold text-3xl mb-20 rounded-r-lg ${backgroundColor} ${textColor}`}>
+        Student Journey
+      </h2>
+      <Studies />
+      <h2
+        className={`font-semibold text-3xl mb-20 text-center text-pink-500 ${textColor}`}>
+        👋 Say hi !
+      </h2>
+      <Contact />
+      <Footer />
+    </Layout>
   );
 }
 

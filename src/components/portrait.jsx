@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import portraitImg from "/images/Portrait.jpg";
-import Description from "./description";
+import Description from "./Description";
 import data from "../assets/datas/text.json";
-import Legend from "./legend";
+import Legend from "./Legend";
 
 function Portrait({ isNightMode, mode }) {
   let rectangleColor;

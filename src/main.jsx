@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
 import App from "./components/App.jsx";
-import { ModeProvider } from "./context/ModeContext";
+import { ModeProvider } from "./context/ModeContext.jsx";
 import "./assets/css/index.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

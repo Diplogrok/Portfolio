@@ -1,11 +1,14 @@
 import React from "react";
-import Card from "./skillsCards";
+import { useModeContext } from "../context/ModeContext";
+import Card from "./SkillsCard";
 import data from "../assets/datas/text.json";
 
 function Skills() {
+  const { textColor } = useModeContext();
+
   return (
     <div className="pb-32">
-      <h2 className="font-semibold text-3xl pt-32 pb-10">
+      <h2 className={`font-semibold text-3xl pt-32 pb-10 ${textColor}`}>
         How can I help you ?
       </h2>
       <div className="flex space-x-3 justify-center">
