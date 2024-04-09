@@ -11,7 +11,7 @@ function Skills() {
       <h2 className={`font-semibold text-3xl pt-32 pb-10 ${textColor}`}>
         How can I help you ?
       </h2>
-      <div className="flex space-x-3 justify-center">
+      <div className="flex space-x-3 w-3/4 m-auto">
         {data.Skills.map((skill, index) => (
           <Card
             key={index}

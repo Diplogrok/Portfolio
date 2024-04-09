@@ -15,8 +15,6 @@ function Contact() {
           <div className="px-6 py-4">
             <a href={contact.url} target="_blank" rel="noopener noreferrer">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
                 className="h-10 w-10"
                 style={{ fill: iconColor }}
                 dangerouslySetInnerHTML={{ __html: contact.logo }}
