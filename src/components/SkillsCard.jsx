@@ -5,9 +5,9 @@ function Card({ title, description, imageUrl }) {
   const { textColor, getColor } = useModeContext();
   const iconColor = getColor();
   return (
-    <div className="rounded-xl border overflow-hidden flex flex-col items-center">
+    <div className="rounded-xl border overflow-hidden flex flex-col items-center ">
       <svg
-        className="pb-10 pt-10 max-w-44 "
+        className="pb-10 pt-10 max-w-44 transition-transform transform hover:scale-110"
         dangerouslySetInnerHTML={{ __html: imageUrl }}
         style={{ fill: iconColor }}
       />

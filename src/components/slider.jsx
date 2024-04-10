@@ -77,6 +77,16 @@ function Slider() {
         className="absolute top-1/2 right-4 transform -translate-y-1/2 cursor-pointer">
         <RightArrowIcon arrowColor={arrowColor} />
       </div>
+      <div className="absolute bottom-2 left-0 right-0 flex justify-center">
+        {data.map((_, index) => (
+          <span
+            key={index}
+            className={`w-3 h-3 rounded-full mx-2 border ${
+              currentSlide === index ? "bg-gray-900" : "bg-gray-400"
+            }`}
+          />
+        ))}
+      </div>
     </div>
   );
 }
