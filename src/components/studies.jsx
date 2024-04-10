@@ -19,7 +19,7 @@ function Studies() {
                   href="https://openclassrooms.com/fr/paths/900-integrateur-web"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-teal-400 font-bold not-italic">
+                  className="not-italic">
                   {study.description}
                 </a>
               ) : (
