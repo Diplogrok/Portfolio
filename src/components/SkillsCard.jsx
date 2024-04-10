@@ -7,7 +7,7 @@ function Card({ title, description, imageUrl }) {
   return (
     <div className="rounded-xl border overflow-hidden flex flex-col items-center">
       <svg
-        className="pb-10 pt-10 max-w-56 transition-transform transform hover:scale-110"
+        className="pb-10 pt-10 max-w-44 "
         dangerouslySetInnerHTML={{ __html: imageUrl }}
         style={{ fill: iconColor }}
       />

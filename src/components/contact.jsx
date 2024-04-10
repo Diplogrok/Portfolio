@@ -7,7 +7,7 @@ function Contact() {
   const iconColor = getColor();
 
   return (
-    <div className="pb-32 flex space-x-3 justify-center">
+    <div className="sm:pb-32 pb-20 flex space-x-3 justify-center">
       {data.Contact.map((contact, index) => (
         <div
           key={index}

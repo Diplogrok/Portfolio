@@ -38,13 +38,15 @@ function Portrait({ isNightMode, mode }) {
   }, []);
 
   return (
-    <div className="relative mt-32 pb-40 flex">
-      <div className={`top-0 left-0 ${rectangleColor} w-64 h-96`} />
-      <div className="absolute left-20 flex items-center">
+    <div className="relative sm:mt-32 mt-10 sm:pb-40 pb-12 flex">
+      <div
+        className={`top-0 left-0 ${rectangleColor} w-32 h-44 sm:w-64 sm:h-96`}
+      />
+      <div className="absolute left-10 sm:left-20 flex items-center">
         <img
           src={portraitImg}
           alt="Portrait"
-          className="w-96 h-96 rounded-full object-cover opacity-60"
+          className="w-44 h-44 sm:w-96 sm:h-96 rounded-full object-cover opacity-60"
         />
         <Description
           text1={data.text1}
@@ -55,7 +57,7 @@ function Portrait({ isNightMode, mode }) {
         />
       </div>
       <div
-        className={`absolute top-52 bottom-0 left-0 rounded-r-lg ${progressBarColor} h-10 animate-progressBarAnimation`}
+        className={`hidden sm:block absolute top-52 bottom-0 left-0 rounded-r-lg ${progressBarColor} h-10 animate-progressBarAnimation`}
         style={{
           width: `${progressWidth}%`,
           transition: "width 0.8s ease-in-out",

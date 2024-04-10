@@ -7,11 +7,12 @@ function Skills() {
   const { textColor } = useModeContext();
 
   return (
-    <div className="pb-32">
-      <h2 className={`font-semibold text-3xl pt-32 pb-10 ${textColor}`}>
+    <div className="sm:pb-32 pb-10">
+      <h2
+        className={`font-semibold sm:text-3xl text-xl sm:pt-32 pt-10 pb-10 ${textColor}`}>
         How can I help you ?
       </h2>
-      <div className="flex space-x-3 w-3/4 m-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 w-3/4 m-auto">
         {data.Skills.map((skill, index) => (
           <Card
             key={index}

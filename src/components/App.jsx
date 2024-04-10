@@ -18,17 +18,18 @@ function App() {
     <Layout mode={mode}>
       <Navbar />
       <Portrait isNightMode={isNightMode} mode={modeAvailability} />
-      <h1 className={`font-semibold text-5xl pb-20 ${textColor}`}>
+      <h1
+        className={`font-semibold sm:text-5xl text-2xl sm:pb-20 pb-10 ${textColor}`}>
         Latest projects
       </h1>
       <Slider />
       <Skills />
       <h2
-        className={`font-semibold text-3xl pl-2 mb-20 rounded-l-lg ${backgroundColor} ${textColor}`}>
+        className={`font-semibold sm:text-3xl text-xl pl-2 sm:mb-20 mb-10 rounded-l-lg ${backgroundColor} ${textColor}`}>
         Student Journey
       </h2>
       <Studies />
-      <h2 className="font-semibold text-3xl text-center text-pink-500">
+      <h2 className="font-semibold sm:text-3xl text-xl text-center text-pink-500">
         👋 Say hi !
       </h2>
       <p className={`mb-8 text-center italic ${textColor}`}>

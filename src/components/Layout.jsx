@@ -6,8 +6,8 @@ function Layout({ children, mode }) {
   const bgColor = mode === "night" ? nightColor : dayColor;
 
   return (
-    <div className={`${bgColor}`}>
-      <div className="max-w-screen-2xl m-auto">{children}</div>
+    <div className={`${bgColor} p-2`}>
+      <div className="max-w-screen-2xl mx-auto flex-grow">{children}</div>
     </div>
   );
 }
