@@ -1,5 +1,4 @@
 {
-  "homepage": "https://diplogrok.github.io/Portfolio/",
   "name": "cr-ez-et-publiez-votre-portfolio-de-d-veloppeur",
   "private": true,
   "version": "0.0.0",
@@ -7,8 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
