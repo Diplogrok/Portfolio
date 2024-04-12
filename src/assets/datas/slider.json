@@ -1,20 +1,20 @@
 [
   {
     "id": "0",
-    "picture": "dist/images/724Events.png",
-    "focusPicture": "dist/images/724Events2.png",
-    "mobilePicture": "dist/images/724EventsMobile.png"
+    "picture": "/images/724Events.png",
+    "focusPicture": "/images/724Events2.png",
+    "mobilePicture": "/images/724EventsMobile.png"
   },
   {
     "id": "1",
-    "picture": "dist/images/kasa.png",
-    "focusPicture": "dist/images/kasa2.png",
-    "mobilePicture": "dist/images/kasaMobile.png"
+    "picture": "/images/kasa.png",
+    "focusPicture": "/images/kasa2.png",
+    "mobilePicture": "/images/kasaMobile.png"
   },
   {
     "id": "2",
-    "picture": "dist/images/ohmyfood.png",
-    "focusPicture": "dist/images/ohmyfood2.png",
-    "mobilePicture": "dist/images/ohmyfoodMobile.png"
+    "picture": "/images/ohmyfood.png",
+    "focusPicture": "/images/ohmyfood2.png",
+    "mobilePicture": "/images/ohmyfoodMobile.png"
   }
 ]

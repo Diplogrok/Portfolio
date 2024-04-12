@@ -18,13 +18,13 @@ function Slider() {
         {data.map((item, index) => (
           <div key={item.id} className="min-w-full flex justify-center">
             <img
-              src={
+              src={`${import.meta.env.VITE_APP_LOCAL ? "" : "/Portfolio"}${
                 hoveredIndex === index
                   ? isMobile
                     ? item.mobilePicture
                     : item.focusPicture
                   : item.picture
-              }
+              }`}
               alt={`Slide ${item.id}`}
               className="rounded-lg cursor-pointer border border-purple-300"
               onMouseEnter={() => setHoveredIndex(index)}
