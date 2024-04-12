@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import portraitImg from "/Portrait.jpg";
+import portraitImg from "/images/Portrait.jpg";
 import Description from "./Description";
 import data from "../assets/datas/text.json";
 import Legend from "./Legend";
