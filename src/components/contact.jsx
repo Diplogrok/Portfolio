@@ -17,6 +17,7 @@ function Contact() {
               <svg
                 className="h-10 w-10"
                 style={{ fill: iconColor }}
+                alt="logo"
                 dangerouslySetInnerHTML={{ __html: contact.logo }}
               />
             </a>

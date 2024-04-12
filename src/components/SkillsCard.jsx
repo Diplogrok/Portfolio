@@ -10,6 +10,7 @@ function Card({ title, description, imageUrl }) {
         className="pb-10 pt-10 max-w-44 transition-transform transform hover:scale-110"
         dangerouslySetInnerHTML={{ __html: imageUrl }}
         style={{ fill: iconColor }}
+        alt="logo"
       />
       <div className="px-6 py-4">
         <div className={`font-bold text-xl mb-5 ${textColor}`}>{title}</div>
