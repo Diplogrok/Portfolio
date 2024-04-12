@@ -3,7 +3,7 @@ import { useModeContext } from "../context/ModeContext";
 import Layout from "./Layout";
 import Navbar from "./Navbar";
 import Portrait from "./Portrait";
-import Slider from "./slider";
+import Slider from "./Slider";
 import Skills from "./Skills";
 import Studies from "./Studies";
 import Contact from "./Contact";
