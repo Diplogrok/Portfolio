@@ -6,7 +6,7 @@
   font-family: Inter;
 }
 .texture-effect {
-  background-image: url("src/assets/images/texture.png");
+  background-image: url("/texture.png");
   background-blend-mode: screen;
   background-size: cover;
 }

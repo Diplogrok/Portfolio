@@ -2,19 +2,19 @@
   {
     "id": "0",
     "picture": "src/assets/images/724Events.png",
-    "focusPicture": "src/assets//images/724Events2.png",
-    "mobilePicture": "src/assets//images/724EventsMobile.png"
+    "focusPicture": "src/assets/images/724Events2.png",
+    "mobilePicture": "src/assets/images/724EventsMobile.png"
   },
   {
     "id": "1",
     "picture": "src/assets//images/kasa.png",
-    "focusPicture": "src/assets//images/kasa2.png",
-    "mobilePicture": "src/assets//images/kasaMobile.png"
+    "focusPicture": "src/assets/images/kasa2.png",
+    "mobilePicture": "src/assets/images/kasaMobile.png"
   },
   {
     "id": "2",
-    "picture": "src/assets//images/ohmyfood.png",
-    "focusPicture": "src/assets//images/ohmyfood2.png",
-    "mobilePicture": "src/assets//images/ohmyfoodMobile.png"
+    "picture": "src/assets/images/ohmyfood.png",
+    "focusPicture": "src/assets/images/ohmyfood2.png",
+    "mobilePicture": "src/assets/images/ohmyfoodMobile.png"
   }
 ]
