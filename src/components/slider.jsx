@@ -19,10 +19,12 @@ function Slider() {
           <div key={item.id} className="min-w-full flex justify-center">
             <img
               src={
-                hoveredIndex === index
-                  ? isMobile
-                    ? item.mobilePicture
-                    : item.focusPicture
+                isMobile && hoveredIndex === index
+                  ? item.mobileFocusPicture
+                  : isMobile
+                  ? item.mobilePicture
+                  : hoveredIndex === index
+                  ? item.focusPicture
                   : item.picture
               }
               alt={`Slide ${item.id}`}
